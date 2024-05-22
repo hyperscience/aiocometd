@@ -8,5 +8,5 @@ PROJECT_URLS = {
     "Coverage": "https://coveralls.io/github/robertmrk/aiocometd",
     "Docs": "http://aiocometd.readthedocs.io/"
 }
-VERSION = "0.5.0"
+VERSION = "0.4.5+hs0"
 AUTHOR = "Hyperscience"
