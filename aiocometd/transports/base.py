@@ -432,7 +432,7 @@ class TransportBase(Transport):  # pylint: disable=too-many-instance-attributes
         :param coro: Coroutine
         :return: Future
         """
-        self._connect_task = asyncio.ensure_future(coro, loop=self._loop)
+        self._connect_task = asyncio.ensure_future(coro)
         self._connect_task.add_done_callback(self._connect_done)
         return self._connect_task
 
