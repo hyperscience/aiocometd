@@ -181,7 +181,8 @@ class Client:  # pylint: disable=too-many-instance-attributes
         # created in a coroutine
         if self._http_session is None:
             self._http_session = aiohttp.ClientSession(
-                json_serialize=self._json_dumps
+                json_serialize=self._json_dumps,
+                cookie_jar=aiohttp.CookieJar(quote_cookie=False),
             )
         return self._http_session
 
